@@ -121,7 +121,6 @@ p {
         grid-row: span 2;
     }
 }
-
 footer{
     background-color: lightgreen;
     padding: 1rem;
@@ -133,3 +132,4 @@ footer{
         justify-content: space-between;
     }
 }
+
