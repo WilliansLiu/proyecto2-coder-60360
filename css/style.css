@@ -107,12 +107,14 @@ p {
     width: 100%;
     height: 100%;
 }
+
 .contenedor-galeria2 img {
     padding-bottom: 1rem;
     width: 100%;
     height: 100%;
 }
-.video{
+
+.video {
     min-width: 100%;
     max-width: 100%;
     min-height: 600px;
@@ -149,12 +151,22 @@ p {
         grid-row: span 2;
     }
 }
+
 @media (min-width:1200px) {
     .contenedor-galeria2 {
         grid-template-columns: 1fr 1fr;
-    grid-row: 1fr;}
-.imagen-m1{grid-row: 1;}
-.imagen-m2{grid-row: 1 ;}}
+        grid-row: 1fr;
+    }
+
+    .imagen-m1 {
+        grid-row: 1;
+    }
+
+    .imagen-m2 {
+        grid-row: 1;
+    }
+}
+
 footer {
     background-color: lightgreen;
     padding: 1rem;
