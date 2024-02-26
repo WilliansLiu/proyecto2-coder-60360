@@ -13,7 +13,10 @@
 <body>
     <header>
         <h1>INFO SOBRE PRODUCTO DE MANICURA</h1>
-        <input type="search" name="buscador" placeholder="buscador">
+        <form action="">
+            <input type="search" name="buscador" placeholder="buscador">
+            <input type="submit" value="enviar">
+        </form>
         <nav>
             <a href="../index.html" class="inicio">inicio</a>
             <a href="./contacto.html">contacto</a>
@@ -30,18 +33,20 @@
         <section>
             <h2>NAVEGACION</h2>
             <nav>
-                <ul>
-                    <li><a href="../index.html" class="inicio">inicio</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                    <li><a href="./catalogo.html">catalogo</a></li>
-                </ul>
+                <a href="/index.html" class="inicio">inicio</a>
+                <a href="./paginas/contacto.html">contacto</a>
+                <a href="./paginas/catalogo.html">catalogo</a>
             </nav>
+        </section>
+        <section>
             <h3>CONTACTANOS</h3>
             <ul>
                 <li><input type="text" name="celular" placeholder="celular"></li>
                 <li><input type="text" name="mail" placeholder="mail"></li>
                 <li><input type="text" name="ubicacion" placeholder="ubicacion"></li>
             </ul>
+        </section>
+        <section>
             <h4>NUESTRAS REDES SOCIALES</h4>
             <a href="">instagram</a>
             <a href="">facebook</a>

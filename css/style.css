@@ -18,6 +18,7 @@ header {
     align-items: center;
     flex-direction: column;
     gap: 1;
+    position: sticky;
 }
 
 header form {
@@ -28,13 +29,16 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-iframe{
+
+iframe {
     max-width: 100%;
+    padding: 1rem;
 }
+
 h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .inicio {
@@ -98,38 +102,68 @@ p {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 .contenedor-galeria img {
     width: 100%;
     height: 100%;
 }
+.contenedor-galeria2 img {
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.video{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+
+}
 
 
 @media(min-width:600px) {
-    .contenedor-galeria{
+    .contenedor-galeria {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, minmax(150px,35vh));
+        grid-template-rows: repeat(2, minmax(200px, 35vh));
         gap: 1rem;
-    }}
-@media (min-width:1200px){
-    .contenedor-galeria{
+    }
+}
+
+@media(min-width:600px) {
+    .contenedor-galeria2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(150px, 35vh));
+        gap: 1rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .contenedor-galeria {
         grid-template-columns: 2fr 2fr 2fr;
         grid-template-rows: 1fr 1fr;
     }
-    .imagen-destacada{
+
+    .imagen-destacada {
         grid-column: span 1;
         grid-row: span 2;
     }
 }
-footer{
+@media (min-width:1200px) {
+    .contenedor-galeria2 {
+        grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;}
+.imagen-m1{grid-row: 1;}
+.imagen-m2{grid-row: 1 ;}}
+footer {
     background-color: lightgreen;
     padding: 1rem;
 }
-@media (min-width:600px){
-    footer{
+
+@media (min-width:600px) {
+    footer {
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         justify-content: space-between;
     }
 }
-
