@@ -1,0 +1,56 @@
+@mixin mq-tablet {
+    @media (min-width: 600px){
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+
+
+
+header {
+    background-color: $bg-color;
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 1;
+    position: sticky;
+}
+
+header form {
+    display: none;
+}
+
+@include mq-tablet {
+    header {
+        display: grid;
+        grid-template-columns: repeat 2, 1fr;
+        grid-template-rows: 70px;
+    
+
+    form {
+        display: inline-block;
+        grid-column: 4;
+        justify-self: end;
+    
+
+    nav {
+        grid-column: span 4;
+    
+
+    h1 {
+        justify-self: start;
+    }
+}}}}
+
+@include mq-desktop {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

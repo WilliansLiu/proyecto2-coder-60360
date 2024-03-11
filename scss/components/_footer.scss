@@ -1,0 +1,13 @@
+
+footer {
+    background-color: $bg-color;
+    padding: 1rem;
+}
+
+@include mq-tablet {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

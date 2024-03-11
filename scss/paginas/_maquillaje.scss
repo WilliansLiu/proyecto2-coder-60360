@@ -1,0 +1,29 @@
+.contenedor-galeria2 img {
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:600px) {
+    .contenedor-galeria2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(150px, 35vh));
+        gap: 1rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .contenedor-galeria2 {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+    }
+
+    .imagen-m1 {
+        grid-row: 1;
+    }
+
+    .imagen-m2 {
+        grid-row: 1;
+    }
+}
