@@ -11,7 +11,17 @@ $colores-redes: (
     facebook: blue,
     tiktok: black
 );
+@mixin mq-tablet {
+    @media (min-width: 600px){
+        @content;
+    }
+}
 
+@mixin mq-desktop {
+    @media (min-width: 1200px){
+        @content;
+    }
+}
 * {
     margin: 0;
     padding: 0;

@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-@media(min-width:600px) {
+@include mq-tablet {
     .contenedor-galeria {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width:1200px) {
+@include mq-desktop {
     .contenedor-galeria {
         grid-template-columns: 2fr 2fr 2fr;
         grid-template-rows: 1fr 1fr;

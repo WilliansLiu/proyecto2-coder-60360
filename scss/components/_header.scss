@@ -1,16 +1,3 @@
-@mixin mq-tablet {
-    @media (min-width: 600px){
-        @content;
-    }
-}
-
-@mixin mq-desktop {
-    @media (min-width: 1200px){
-        @content;
-    }
-}
-
-
 
 header {
     background-color: $bg-color;
