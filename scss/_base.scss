@@ -5,23 +5,26 @@ search
 $bg-color: lightgreen;
 $altura-ancho: 100%;
 $ta: center;
+$gr: 1; 
 
 $colores-redes: (
-    instagram: red,
-    facebook: blue,
-    tiktok: black
-);
+        instagram: red,
+        facebook: blue,
+        tiktok: black
+    );
+
 @mixin mq-tablet {
-    @media (min-width: 600px){
+    @media (min-width: 600px) {
         @content;
     }
 }
 
 @mixin mq-desktop {
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
         @content;
     }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +44,7 @@ iframe {
     max-width: $altura-ancho;
     padding: 1rem;
 }
+
 .video {
     min-width: $altura-ancho;
     max-width: $altura-ancho;
@@ -68,6 +72,3 @@ nav {
 p {
     text-align: $ta;
 }
-
-
-
