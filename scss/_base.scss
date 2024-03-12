@@ -3,15 +3,16 @@
 search
 </span> */
 $bg-color: lightgreen;
+$color-link: darkgreen;
 $altura-ancho: 100%;
 $ta: center;
-$gr: 1; 
+$gr: 1;
 
 $colores-redes: (
-        instagram: red,
-        facebook: blue,
-        tiktok: black
-    );
+    instagram: red,
+    facebook: blue,
+    tiktok: black
+);
 
 @mixin mq-tablet {
     @media (min-width: 600px) {
