@@ -37,6 +37,10 @@ body {
     text-align: $ta;
 }
 
+main{
+    background-color: adjust-color($color:#eceef0)
+}
+
 img {
     max-width: $altura-ancho;
     max-height: $altura-ancho;
@@ -59,7 +63,7 @@ h1, h2 {
     .cinzel{
         font-family: "Cinzel", serif;
         font-optical-sizing: auto;
-        font-weight: 900;
+        font-weight: 400px;
         font-style: normal;
     }
     
