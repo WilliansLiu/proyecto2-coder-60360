@@ -4,7 +4,8 @@ a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400px;
     color: chocolate;
-    &:hover{
+
+    &:hover {
         text-shadow: 0px 0px 2px;
         color: greenyellow;
     }
@@ -13,7 +14,39 @@ a {
 .inicio {
     text-decoration: none;
     color: $color-link;
-    &:hover{text-shadow: 0px 0px 10px;
-    color: $color-link;}
+
+    &:hover {
+        text-shadow: 0px 0px 10px;
+        color: $color-link;
+    }
 }
-span{font-weight: bold;}
+
+span {
+    font-weight: bold;
+}
+
+.input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ff0000fb;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, margin 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.2);
+        margin: -3px
+    }
+}
+
+input[type="text"],
+input[type="search"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}

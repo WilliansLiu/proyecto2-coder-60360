@@ -19,12 +19,8 @@ header {
 
         form {
             display: inline-block;
-            grid-column: 4;
+            grid-column: 2;
             justify-self: end;
-
-
-            nav {
-                grid-column: 4;
 
 
                 h1 {
@@ -33,7 +29,6 @@ header {
             }
         }
     }
-}
 
 @include mq-desktop {
     header {
